@@ -7,15 +7,11 @@ An open source tokenizer which supports fast substring search with sqlite FTS(fu
 * create a FTS table with character_tokenizer. For example:
 
     CREATE VIRTUAL TABLE Book USING fts3(name TEXT NOT NULL, author TEXT, tokenize=character);
-* to search for a substring, use [phrase queries](http://www.sqlite.org/fts3.html#section_3). For example:
-
-    -- Query for all documents that contain a substring "lin". This will match
-
-    -- the strings like "Adrenalines", "Linux", "Penicillin".
+* to search for a substring, use [phrase queries](http://www.sqlite.org/fts3.html#section_3). For example, to match the strings such as "Adrenalines", "Linux", or "Penicillin", use:
 
     SELECT * FROM docs WHERE docs MATCH '"lin"';
 
-See SqliteSubstringSearchDemo for an example.
+See SqliteSubstringSearchDemo for a complete example.
 
 ## Motivation
 English uses a space to separate words, but Chinese and Japanese do not.
