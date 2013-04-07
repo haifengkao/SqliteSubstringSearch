@@ -19,8 +19,7 @@ See SqliteSubstringSearchDemo for a complete example.
 English uses a space to separate words, but Chinese and Japanese do not.
 Since built-in FTS tokenizers relies on spaces to separate words, it will treat a whole sentence in Chinese or Japanese as a single word, which makes FTS not useful at all in these languages.
 
-The third-party Chinese and Japanese tokenizers([mmseg](https://code.google.com/p/pymmseg-cpp/)(Chinese), [MeCab](http://mecab.googlecode.com/svn/trunk/mecab/doc/index.html)(Japanese), [ChaSen](http://chasen-legacy.sourceforge.jp/)(Japanese)) use sophisticated and memory intensive approaches to find the ambiguous boundary between words.  
-For simple applications such as querying for people names, a simple substring search is a more reasonable choice than a sophisticated tokenizer.
+The third-party Chinese and Japanese tokenizers([mmseg](https://code.google.com/p/pymmseg-cpp/)(Chinese), [MeCab](http://mecab.googlecode.com/svn/trunk/mecab/doc/index.html)(Japanese), [ChaSen](http://chasen-legacy.sourceforge.jp/)(Japanese)) use sophisticated and memory intensive approaches to find the ambiguous boundary between words. For simple applications such as querying for people names, a simple substring search is a more reasonable choice than a sophisticated tokenizer.
 
 ## How it works
 The character tokenizer partitions each character as an individual token. 
