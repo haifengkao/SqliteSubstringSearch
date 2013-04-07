@@ -5,15 +5,12 @@ An open source tokenizer which supports fast substring search with sqlite FTS(fu
 ## How to use it
 * register the "character_tokenizer"
 * create a FTS table with character_tokenizer. For example:
-```sql
-CREATE VIRTUAL TABLE Book USING fts3(name TEXT NOT NULL, author TEXT, tokenize=character);
-```
+    CREATE VIRTUAL TABLE Book USING fts3(name TEXT NOT NULL, author TEXT, tokenize=character);
 * to search for a substring, use [phrase queries](http://www.sqlite.org/fts3.html#section_3). For example:
-```sql
--- Query for all documents that contain a substring "lin". This will match
--- the strings like "Adrenalines", "Linux", "Penicillin".
-SELECT * FROM docs WHERE docs MATCH '"lin"';
-```
+    -- Query for all documents that contain a substring "lin". This will match
+    -- the strings like "Adrenalines", "Linux", "Penicillin".
+    SELECT * FROM docs WHERE docs MATCH '"lin"';
+
 See SqliteSubstringSearchDemo for an example.
 
 ## Motivation
