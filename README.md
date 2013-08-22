@@ -1,8 +1,8 @@
 SqliteSubstringSearch
 =====================
-An open source tokenizer which supports fast substring search with sqlite FTS(full text search).
+An open source tokenizer which supports fast substring search with sqlite FTS (full text search).
 
-If you feel `LIKE '%text%'` is too slow, this is the right solution for you.
+If you think `LIKE '%text%'` is too slow, this is the right solution for you.
 
 ## How to use it
 * register the "character_tokenizer" module
@@ -19,7 +19,7 @@ See SqliteSubstringSearchDemo for a complete example.
 English uses a space to separate words, but Chinese and Japanese do not.
 Since built-in FTS tokenizers relies on spaces to separate words, it will treat the whole sentence in Chinese or Japanese as a single word, which makes FTS not useful at all in these languages.
 
-The third-party Chinese and Japanese tokenizers([mmseg](https://code.google.com/p/pymmseg-cpp/)(Chinese), [MeCab](http://mecab.googlecode.com/svn/trunk/mecab/doc/index.html)(Japanese), [ChaSen](http://chasen-legacy.sourceforge.jp/)(Japanese)) use sophisticated and memory intensive approaches to find the ambiguous boundary between words. For simple applications such as querying for people names, a simple substring search is a more reasonable choice than these sophisticated tokenizers.
+The third-party Chinese and Japanese tokenizers ([mmseg](https://code.google.com/p/pymmseg-cpp/) for Chinese, [MeCab](http://mecab.googlecode.com/svn/trunk/mecab/doc/index.html), [ChaSen](http://chasen-legacy.sourceforge.jp/) for Japanese) use sophisticated and memory intensive approaches to find the ambiguous boundary between words. For simple applications such as querying for people names, a simple substring search is a more reasonable choice than these sophisticated tokenizers.
 
 ## How it works
 The character tokenizer partitions each character as an individual token. 
