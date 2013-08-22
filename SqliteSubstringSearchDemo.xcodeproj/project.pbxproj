@@ -28,10 +28,10 @@
 		F935785217C69FC2000D7970 /* character_tokenizer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = character_tokenizer.c; path = CharacterTokenizer/character_tokenizer.c; sourceTree = SOURCE_ROOT; };
 		F935785317C69FC2000D7970 /* character_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_tokenizer.h; path = CharacterTokenizer/character_tokenizer.h; sourceTree = SOURCE_ROOT; };
 		F935785517C69FDA000D7970 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		F935785617C6A3E4000D7970 /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = CharacterTokenizer/fts3_tokenizer.h; sourceTree = SOURCE_ROOT; };
 		F94A93911710C3E700F0F460 /* SqliteSubstringSearchDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SqliteSubstringSearchDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94A93941710C3E700F0F460 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		F94A939D1710C46A00F0F460 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		F94A93A21710C4CD00F0F460 /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +46,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F935785717C6A3F9000D7970 /* character tokenizer */ = {
+			isa = PBXGroup;
+			children = (
+				F935785617C6A3E4000D7970 /* fts3_tokenizer.h */,
+				F935785217C69FC2000D7970 /* character_tokenizer.c */,
+				F935785317C69FC2000D7970 /* character_tokenizer.h */,
+			);
+			name = "character tokenizer";
+			sourceTree = "<group>";
+		};
 		F94A93881710C3E700F0F460 = {
 			isa = PBXGroup;
 			children = (
+				F935785717C6A3F9000D7970 /* character tokenizer */,
 				F94A939D1710C46A00F0F460 /* libsqlite3.dylib */,
 				F935785517C69FDA000D7970 /* README.md */,
 				F94A93931710C3E700F0F460 /* SqliteSubstringSearchDemo */,
@@ -67,9 +78,6 @@
 		F94A93931710C3E700F0F460 /* SqliteSubstringSearchDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F935785217C69FC2000D7970 /* character_tokenizer.c */,
-				F935785317C69FC2000D7970 /* character_tokenizer.h */,
-				F94A93A21710C4CD00F0F460 /* fts3_tokenizer.h */,
 				F94A93941710C3E700F0F460 /* main.c */,
 			);
 			path = SqliteSubstringSearchDemo;
