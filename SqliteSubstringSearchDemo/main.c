@@ -5,7 +5,7 @@
 //  Created by Hai Feng Kao on 4/6/13.
 //  Copyright (c) 2013 com.haifeng. All rights reserved.
 //
-//  This program demos how to use sqlite FTS(full text search) and character tokenizer to query substrings efficiently
+//  This program demos how to use sqlite FTS (full text search) and character tokenizer to query substrings efficiently
 
 #include <stdio.h>
 #include <sqlite3.h>
