@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F935785417C69FC2000D7970 /* character_tokenizer.c in Sources */ = {isa = PBXBuildFile; fileRef = F935785217C69FC2000D7970 /* character_tokenizer.c */; };
 		F94A93951710C3E700F0F460 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F94A93941710C3E700F0F460 /* main.c */; };
-		F94A93971710C3E700F0F460 /* SqliteSubstringSearchDemo.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F94A93961710C3E700F0F460 /* SqliteSubstringSearchDemo.1 */; };
 		F94A939E1710C46A00F0F460 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F94A939D1710C46A00F0F460 /* libsqlite3.dylib */; };
-		F94A93A11710C4B000F0F460 /* character_tokenizer.c in Sources */ = {isa = PBXBuildFile; fileRef = F94A939F1710C4B000F0F460 /* character_tokenizer.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,19 +19,18 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				F94A93971710C3E700F0F460 /* SqliteSubstringSearchDemo.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F935785217C69FC2000D7970 /* character_tokenizer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = character_tokenizer.c; path = CharacterTokenizer/character_tokenizer.c; sourceTree = SOURCE_ROOT; };
+		F935785317C69FC2000D7970 /* character_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_tokenizer.h; path = CharacterTokenizer/character_tokenizer.h; sourceTree = SOURCE_ROOT; };
+		F935785517C69FDA000D7970 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		F94A93911710C3E700F0F460 /* SqliteSubstringSearchDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SqliteSubstringSearchDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94A93941710C3E700F0F460 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		F94A93961710C3E700F0F460 /* SqliteSubstringSearchDemo.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SqliteSubstringSearchDemo.1; sourceTree = "<group>"; };
 		F94A939D1710C46A00F0F460 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		F94A939F1710C4B000F0F460 /* character_tokenizer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = character_tokenizer.c; sourceTree = "<group>"; };
-		F94A93A01710C4B000F0F460 /* character_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = character_tokenizer.h; sourceTree = "<group>"; };
 		F94A93A21710C4CD00F0F460 /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				F94A939D1710C46A00F0F460 /* libsqlite3.dylib */,
+				F935785517C69FDA000D7970 /* README.md */,
 				F94A93931710C3E700F0F460 /* SqliteSubstringSearchDemo */,
 				F94A93921710C3E700F0F460 /* Products */,
 			);
@@ -68,11 +67,10 @@
 		F94A93931710C3E700F0F460 /* SqliteSubstringSearchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F935785217C69FC2000D7970 /* character_tokenizer.c */,
+				F935785317C69FC2000D7970 /* character_tokenizer.h */,
 				F94A93A21710C4CD00F0F460 /* fts3_tokenizer.h */,
-				F94A939F1710C4B000F0F460 /* character_tokenizer.c */,
-				F94A93A01710C4B000F0F460 /* character_tokenizer.h */,
 				F94A93941710C3E700F0F460 /* main.c */,
-				F94A93961710C3E700F0F460 /* SqliteSubstringSearchDemo.1 */,
 			);
 			path = SqliteSubstringSearchDemo;
 			sourceTree = "<group>";
@@ -129,7 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F94A93951710C3E700F0F460 /* main.c in Sources */,
-				F94A93A11710C4B000F0F460 /* character_tokenizer.c in Sources */,
+				F935785417C69FC2000D7970 /* character_tokenizer.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +226,7 @@
 				F94A939C1710C3E700F0F460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
