@@ -15,6 +15,21 @@ If you think `LIKE '%text%'` is too slow, this is the right solution for you.
 
 See SqliteSubstringSearchDemo for a complete example.
 
+## Objective-C Example
+If you want to open a database encoded by `character` tokenizer, do the following:        
+```objc        
+#import <FMDB/FMDatabase.h>
+#import "character_tokenizer.h"
+
+FMDatabase* database = [[FMDatabase alloc] initWithPath:@"my_database.db"];
+if ([database open]) {
+    // add FTS support
+    const sqlite3_tokenizer_module *ptr;
+    get_character_tokenizer_module(&ptr);
+    registerTokenizer(database.sqliteHandle, "character", ptr);
+}
+```      
+        
 ## Motivation
 English uses a space to separate words, but Chinese and Japanese do not.
 Since built-in FTS tokenizers relies on spaces to separate words, it will treat the whole sentence in Chinese or Japanese as a single word, which makes FTS not useful at all in these languages.
